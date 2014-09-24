@@ -36,6 +36,18 @@ hello = (name) ->
 
 console.log hello "Harry"
 
+# function with array
+hello2 = (nameArray) ->
+  "Hello, #{nameArray[0]}, #{nameArray[1]} and #{nameArray[2]}"
+
+console.log hello2 ['Harry', 'Fer', 'Mark']
+
+# Default argument
+volume2 = (length, width, height = 5) ->
+  length * width * height
+
+console.log "volume2: " + volume2 3, 4
+console.log "volume2: " + volume2 3, 4, 10
 
 
 
